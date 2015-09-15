@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World!</string>
+    <string name="app_name">Pron</string>
+    <string name="btnUp">UP</string>
+    <string name="btnDown">DOWN</string>
+    <string name="btnLeft">LEFT</string>
+    <string name="btnRight">RIGHT</string>
+
+</resources>

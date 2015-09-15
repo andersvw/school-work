@@ -1,0 +1,17 @@
+Chapter 3 - Homework 6
+
+$1 Billion dollar March Madness!
+
+Assigned a bit early...  Groups of 2 are OK for this assignment (Please let me know who worked on the programming).
+ 
+Warren Buffet is giving away $1 Billion dollars to whoever turns in a perfect NCAA bracket.  Seems easy enough, right?
+
+Create a program to calculate the odds picking one correct NCAA bracket... picking from 64 teams.
+
+Then alter the program to automatically pick heavily favored matches.  In other words, every game with a seed difference of more than 10, assume the higher seed wins.  What are the odds when bias is assumed?
+
+Hint: The first problem's math is incredibly easy...  There's 63 games...  Each game can have two possible outcomes...  2^63...  
+
+The second problem...  you have to figure out the number of bias 10+ games and count them as 2^0...  
+
+Kicker...  Bias should be a variable...  The lower the number, the more assumed outcomes there will be.  If I had a bias of 1, that means every favorite wins...

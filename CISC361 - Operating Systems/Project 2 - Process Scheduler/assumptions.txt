@@ -1,0 +1,9 @@
+Assumptions:
+	- If a process finishes on cycle n, the next process will start on cycle n+1
+		- That includes context switches, the CS will begin at n+1
+		- i.e. half CS = 2, process terminates on cycle 20, new process could start at 21
+			- if that process needs to be restored, 21 and 22 are the CS and the process starts on 23
+	- If a process finishes, there is no (half) context switch to back up its registers
+		- There is, however, a (half) context switch to restore a process that has previously been on the CPU, even after a terminated process
+	- Every time a process is removed from running for IO, there is a halfCS and when they return, another halfCS
+		- Even if there is only 1 process remaining that must do multiple CPU/IO bursts. It will do a full CS every time.

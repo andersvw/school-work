@@ -1,0 +1,18 @@
+Chapter 3 - Homework 5
+
+Create an assembler program to do the following:
+
+Calculate area of a given object, using floating point precision.
+
+Handle the following objects:
+ 
+Square
+Rectangle
+Circle
+Triangle
+
+Program should prompt the user for which object (example, enter '1' for Square, etc).
+Program should THEN prompt for parameters for area (square is just one side... rectangle is hxw, etc)
+Program should compute the area using floating point values and display the value to the console.
+
+Check out 'radius' as an example...  it's posted under resources/code

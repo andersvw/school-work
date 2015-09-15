@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rloGameGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/tloGameButtons"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txtMessageBox"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/tronBlue" />
+
+        <edu.udel.nicolini.pt.PTView
+            android:id="@+id/vPTView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/txtMessageBox" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tloGameButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <Button
+                android:id="@+id/btnGameDown"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1.0"
+                android:text="@string/btnDown"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnGameUp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1.0"
+                android:text="@string/btnUp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <Button
+                android:id="@+id/btnGameLeft"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1.0"
+                android:text="@string/btnLeft"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnGameRight"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1.0"
+                android:text="@string/btnRight"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
